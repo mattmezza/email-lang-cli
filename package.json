@@ -1,0 +1,41 @@
+{
+  "name": "email-lang-cli",
+  "version": "1.0.0",
+  "description": "A CLI that supports The email language",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node index.js",
+    "build": "babel lib -d dist",
+    "test": "npm run build && npm run single && npm run multi && npm run dir",
+    "single": "email-lang-cli --file tests/email.txt --out-file tests/email/emails.json",
+    "multi": "email-lang-cli --file tests/emails.txt --out-file tests/emails/emails.json",
+    "dir": "email-lang-cli --dir tests/dir --out-file tests/dir/emails.json"
+  },
+  "bin": {
+    "email-lang-cli": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattmezza/email-lang-cli.git"
+  },
+  "keywords": [
+    "email-lang",
+    "CLI",
+    "parser",
+    "email"
+  ],
+  "author": "Matteo Merola <mattmezza@gmail.com> (http://matteomerola.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattmezza/email-lang-cli/issues"
+  },
+  "homepage": "https://github.com/mattmezza/email-lang-cli#readme",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-latest": "^6.22.0"
+  },
+  "dependencies": {
+    "args": "^2.3.0",
+    "email-lang": "^1.0.0"
+  }
+}
