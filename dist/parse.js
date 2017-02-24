@@ -18,7 +18,7 @@ var _path2 = _interopRequireDefault(_path);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_args2.default.option('file', 'The file containing the email text you want to parse', 'email.txt').option('dir', 'The directory containing the email text files you want to parse', 'emails-directory').option('out-file', 'The output file in which you want the emails to be parsed', 'emails.json');
+_args2.default.option('file', 'The file containing the email text you want to parse').option('dir', 'The directory containing the email text files you want to parse').option('out-file', 'The output file in which you want the emails to be parsed', 'emails.json');
 
 var flags = _args2.default.parse(process.argv);
 if (flags.file) {

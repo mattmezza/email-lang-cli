@@ -40,7 +40,7 @@ email-lang-cli --file email.txt --out-file emails.json
 The full specification of the CLI can be obtained with `email-lang-cli -h` and is as follows
 
 ```
-Usage: email-lang-cli [options] [command]
+Usage: email lang-cli [options] [command]
 
 Commands:
 
@@ -48,8 +48,8 @@ Commands:
 
 Options:
 
-  -d, --dir [value]       The directory containing the email text files you want to parse (defaults to "emails-directory")
-  -f, --file [value]      The file containing the email text you want to parse (defaults to "email.txt")
+  -d, --dir               The directory containing the email text files you want to parse
+  -f, --file              The file containing the email text you want to parse
   -h, --help              Output usage information
   -o, --out-file [value]  The output file in which you want the emails to be parsed (defaults to "emails.json")
   -v, --version           Output the version number

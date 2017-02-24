@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run build && node index.js",
     "build": "babel lib -d dist",
-    "test": "npm run build && npm run single && npm run multi && npm run dir",
+    "test": "npm run build && npm link && npm run single && npm run multi && npm run dir",
     "single": "email-lang-cli --file tests/email.txt --out-file tests/email/emails.json",
     "multi": "email-lang-cli --file tests/emails.txt --out-file tests/emails/emails.json",
     "dir": "email-lang-cli --dir tests/dir --out-file tests/dir/emails.json"
